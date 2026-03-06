@@ -1,0 +1,31 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" rx="24" fill="#2563eb"/>
+  
+  <!-- Blueprint grid pattern -->
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="12" x2="24" y2="12" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+      <line x1="12" y1="0" x2="12" y2="24" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="192" height="192" fill="url(#grid)"/>
+  
+  <!-- Main compass star -->
+  <path d="M96 24L108 72L156 84L108 96L96 144L84 96L36 84L84 72L96 24Z" fill="#ffffff"/>
+  
+  <!-- Inner circle -->
+  <circle cx="96" cy="96" r="16" fill="#2563eb"/>
+  
+  <!-- Measurement marks -->
+  <line x1="96" y1="48" x2="96" y2="60" stroke="#ffffff" stroke-width="4"/>
+  <line x1="96" y1="132" x2="96" y2="144" stroke="#ffffff" stroke-width="4"/>
+  <line x1="48" y1="96" x2="60" y2="96" stroke="#ffffff" stroke-width="4"/>
+  <line x1="132" y1="96" x2="144" y2="96" stroke="#ffffff" stroke-width="4"/>
+  
+  <!-- Corner brackets -->
+  <path d="M24 24L24 40L40 24" stroke="#ffffff" stroke-width="3" fill="none"/>
+  <path d="M168 24L168 40L152 24" stroke="#ffffff" stroke-width="3" fill="none"/>
+  <path d="M24 168L24 152L40 168" stroke="#ffffff" stroke-width="3" fill="none"/>
+  <path d="M168 168L168 152L152 168" stroke="#ffffff" stroke-width="3" fill="none"/>
+</svg>

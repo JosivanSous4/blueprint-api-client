@@ -1,0 +1,27 @@
+services:
+  # Backend Service
+  - type: web
+    name: blueprint-backend
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: FRONTEND_URL
+        value: https://blueprint-api-client.onrender.com
+
+  # Frontend Service
+  - type: web
+    name: blueprint-frontend
+    runtime: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath:
+      directory: build
+    healthCheckPath: /
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://blueprint-backend.onrender.com

@@ -1,0 +1,208 @@
+.code-editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #1e1e1e;
+}
+
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #2d2d2d;
+  border-bottom: 1px solid #3d3d3d;
+  min-height: 40px;
+}
+
+.editor-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.language-badge {
+  background: #007acc;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.line-count {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.editor-btn {
+  background: #3d3d3d;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.editor-btn:hover {
+  background: #555;
+  color: #fff;
+}
+
+.editor-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.editor-wrapper {
+  flex: 1;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.editor-wrapper .monaco-editor {
+  height: 100% !important;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 30, 30, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #3d3d3d;
+  border-top: 2px solid #61dafb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .editor-toolbar {
+    padding: 0.4rem 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .editor-actions {
+    order: -1;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .editor-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .language-badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
+}
+
+.editor-placeholder {
+  color: #6a6a6a;
+  font-style: italic;
+}
+
+.editor-placeholder-text {
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  color: #6a6a6a;
+  font-style: italic;
+  pointer-events: none;
+  z-index: 1;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 14px;
+}
+
+.code-editor-container[data-theme="light"] {
+  background: #ffffff;
+  border-color: #e1e5e9;
+}
+
+.code-editor-container[data-theme="light"] .editor-toolbar {
+  background: #f3f3f3;
+  border-bottom-color: #e1e5e9;
+}
+
+.code-editor-container[data-theme="light"] .language-badge {
+  background: #0078d4;
+}
+
+.code-editor-container[data-theme="light"] .line-count {
+  color: #6c757d;
+}
+
+.code-editor-container[data-theme="light"] .editor-btn {
+  background: #f8f9fa;
+  border-color: #dee2e6;
+  color: #495057;
+}
+
+.code-editor-container[data-theme="light"] .editor-btn:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.code-editor-container[data-theme="light"] .editor-placeholder-text {
+  color: #adb5bd;
+}
+
+@media (max-width: 768px) {
+  .editor-toolbar {
+    padding: 6px 8px;
+  }
+
+  .editor-actions {
+    gap: 2px;
+  }
+
+  .editor-btn {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  .language-badge {
+    font-size: 9px;
+    padding: 1px 4px;
+  }
+}

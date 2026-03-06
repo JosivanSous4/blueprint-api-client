@@ -1,0 +1,85 @@
+.collection-manager {
+  background: #2d2d2d;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.export-btn,
+.import-btn {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.export-btn {
+  background: #007acc;
+  color: white;
+  border: none;
+}
+
+.import-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.export-btn:hover {
+  background: #005a9e;
+}
+
+.import-btn:hover {
+  background: #5a6268;
+}
+
+.create-collection {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.create-collection input {
+  flex: 1;
+  padding: 0.5rem;
+  background: #1e1e1e;
+  color: #fff;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+}
+
+.create-collection button {
+  padding: 0.5rem 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.create-collection button:hover {
+  background: #218838;
+}
+
+.collections-summary {
+  display: flex;
+  gap: 1rem;
+  color: #888;
+  font-size: 0.9rem;
+}
