@@ -289,29 +289,6 @@ MIT License - feel free to use this project for personal or commercial purposes.
   - [ ] Custom scripts
   - [ ] Macro recording
 
-## 🎯 Prioridades Atuais
-
-### 🔥 High Priority (Q1 2024)
-
-1. **Ambientes de Trabalho** - Essencial para desenvolvimento profissional
-2. **OAuth 2.0 Support** - Necessário para APIs modernas
-3. **Postman Import** - Migração fácil de usuários existentes
-4. **Request Chaining** - Fluxos de trabalho complexos
-
-### ⚡ Medium Priority (Q2 2024)
-
-1. **Team Collaboration** - Trabalho em equipe
-2. **GraphQL Support** - APIs modernas
-3. **Mobile App** - Acesso mobile
-4. **Performance Dashboard** - Monitoramento
-
-### 💡 Low Priority (Q3-Q4 2024)
-
-1. **AI Features** - Inovação
-2. **Enterprise Integrations** - Grandes clientes
-3. **Desktop App** - Alternativa ao Postman
-4. **Advanced Analytics** - Business intelligence
-
 ## 🤝 Contribuição para o Roadmap
 
 ### Como Contribuir
